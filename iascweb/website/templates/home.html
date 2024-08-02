@@ -1,11 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IASC</title>
-  </head>
-  <body>
-    <h1>Home Page</h1>
-  </body>
-</html>
+<!-- prettier-ignore -->
+{% extends "base.html" %} {% block title %} Home {% endblock %} {% block content %}
+
+<div class="name-container" style="text-align: center; margin-top: 20%">
+  <img
+    src="path_to_logo.png"
+    alt="IASC Logo"
+    style="width: 100px; height: auto"
+  />
+  <div class="name">
+    <span class="first-name big-bold">IASC</span>
+    <span class="last-name big-bold">(Intel AI Students Club)</span>
+  </div>
+  <div class="motto">
+    <p>Empowering AI Innovators of Tomorrow</p>
+  </div>
+</div>
+
+<script src="script/navbar.js"></script>
+{% endblock %}
