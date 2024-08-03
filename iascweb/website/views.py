@@ -13,7 +13,3 @@ def events(request: HttpRequest):
 
 def teams(request: HttpRequest):
     return render(request=request, template_name="teams.html")
-
-
-def about_us(request: HttpRequest):
-    return render(request=request, template_name="about_us.html")
