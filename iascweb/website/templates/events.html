@@ -1,11 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Events</h1>
-  </body>
-</html>
+<!-- prettier-ignore -->
+{% extends "base.html" %} {% block title %} Events {% endblock %} {% block content %}
+{% load static %}
+<section class="bg-blue-700 dark:bg-blue-700">
+  <div
+    class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
+  >
+    <div
+      class="font-light bg-gray-900 p-4 rounded-3xl text-gray-500 sm:text-lg dark:text-gray-400"
+    >
+      <h2
+        class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+      >
+        GenAI Event
+      </h2>
+      <p class="font-semibold text-white font-mono mb-4">
+        The IASC's GenAI event was a remarkable endeavor that brought together
+        experts and enthusiasts alike to explore the impact artificial
+        intelligence (AI) across various industries. Led by Dr. Manish Ghodse, a
+        respected authority in the field, the event delved into the latest
+        advancements and insights shaping the future of AI in industries.
+      </p>
+    </div>
+    <div class="grid grid-cols-2 gap-4 mt-8">
+      <img
+        class="w-full rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
+        alt="office content 1"
+      />
+      <img
+        class="mt-4 w-full lg:mt-10 rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
+        alt="office content 2"
+      />
+    </div>
+  </div>
+</section>
+<section class="bg-gray-900 dark:bg-gray-900">
+  <div
+    class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
+  >
+    <div class="grid grid-cols-2 gap-4 mt-8">
+      <img
+        class="w-full rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
+        alt="office content 1"
+      />
+      <img
+        class="mt-4 w-full lg:mt-10 rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
+        alt="office content 2"
+      />
+    </div>
+    <div
+      class="font-light bg-blue-700 p-4 rounded-3xl text-gray-500 sm:text-lg dark:text-gray-400"
+    >
+      <h2
+        class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+      >
+        Sambhav Techfest 2023
+      </h2>
+      <p class="font-semibold text-white font-mono mb-4">
+        The IASC club, as part of Sambhav, our college's tech fest, organized a
+        series of engaging events aimed at promoting learning and creativity
+        among students.
+      </p>
+
+      <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
+        Techfest events:
+      </h2>
+      <ul
+        class="max-w-md space-y-1 font-semibold text-white list-disc list-inside dark:text-white"
+      >
+        <li>Blog-A-Thon</li>
+        <li>Read & Type</li>
+        <li>Tech quizes</li>
+        <li>Speed typing competition</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="bg-blue-700 dark:bg-blue-700">
+  <div
+    class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
+  >
+    <div
+      class="font-light bg-gray-900 p-4 rounded-3xl text-gray-500 sm:text-lg dark:text-gray-400"
+    >
+      <h2
+        class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+      >
+        Codebuddies
+      </h2>
+      <p class="font-semibold text-white font-mono mb-4">
+        CodeBuddies was a session organized by the IASC club, which fostered
+        collaboration among participants. By pairing them up to solve coding
+        challenges together, this event not only tested participants' coding
+        abilities but also encouraged teamwork and communication skills,
+        essential in the field of technology.
+      </p>
+    </div>
+    <div class="grid grid-cols-2 gap-4 mt-8">
+      <img
+        class="w-full rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
+        alt="office content 1"
+      />
+      <img
+        class="mt-4 w-full lg:mt-10 rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
+        alt="office content 2"
+      />
+    </div>
+  </div>
+</section>
+{% endblock %}
