@@ -1,7 +1,36 @@
 <!-- prettier-ignore -->
 {% extends "base.html" %} {% block title %} Home {% endblock %} {% block content %}
 {% load static %}
-
+<style>
+  .fade-in-bck {
+    -webkit-animation: fade-in-bck 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in-bck 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+  @-webkit-keyframes fade-in-bck {
+    0% {
+      -webkit-transform: translateZ(80px);
+      transform: translateZ(80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-bck {
+    0% {
+      -webkit-transform: translateZ(80px);
+      transform: translateZ(80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+</style>
 <div class="bg-blue-700">
   <div
     class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
@@ -13,7 +42,7 @@
         Intel AI Students Club
       </h1>
       <p
-        class="max-w-2xl mb-6 font-bold text-zinc-900 lg:mb-8 md:text-lg lg:text-3xl dark:text-zinc-400"
+        class="max-w-2xl mb-6 font-bold text-center text-zinc-900 lg:mb-8 md:text-lg lg:text-3xl dark:text-zinc-400"
       >
         A vibrant community established to foster innovation, collaboration, and
         skill development in technology
@@ -21,7 +50,7 @@
     </div>
     <div class="lg:order-1 lg:mt-0 lg:col-span-5 lg:flex">
       <!-- prettier-ignore -->
-      <img src="{% static 'images/iasc_logo_intel.png' %}" class="border-2 drop-shadow-2xl rounded-3xl" />
+      <img src="{% static 'images/iasc_logo_intel.png' %}" class="border-2 fade-in-bck drop-shadow-2x rounded-3xl" />
     </div>
   </div>
 </div>
