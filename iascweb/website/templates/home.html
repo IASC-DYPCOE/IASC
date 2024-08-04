@@ -54,10 +54,61 @@
     </div>
   </div>
 </div>
-
+<section class="bg-white px-4 py-8 antialiased dark:bg-gray-900 md:py-16">
+  <div
+    class="mx-auto grid max-w-screen-2xl rounded-lg bg-gray-50 p-4 dark:bg-gray-800 md:p-8 lg:grid-cols-12 lg:gap-8 lg:p-16 xl:gap-16"
+  >
+    <div class="me-auto place-self-center lg:col-span-7">
+      <h1
+        class="mb-3 text-2xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white md:text-4xl"
+      >
+        Want to see our previous events 🎤?
+      </h1>
+      <p class="mb-6 text-gray-500 dark:text-gray-400">
+        These events provide hands-on experience, enhance problem-solving
+        abilities, and keep members updated with industry trends. We aim to
+        create a supportive environment where students can explore interests,
+        develop technical skills, and prepare for successful tech careers.
+      </p>
+      <button
+        class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800"
+      >
+        <a
+          href="{% url 'events' %}"
+          class="inline-flex items-center justify-center rounded-lg bg-primary-700 px-5 py-3 text-center text-base font-medium text-black hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+        >
+          Our Events ↗️
+        </a>
+      </button>
+    </div>
+    <div class="me-auto place-self-center lg:col-span-7">
+      <h1
+        class="mb-3 text-2xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white md:text-4xl"
+      >
+        Want to meet the team behind IASC 🚀?
+      </h1>
+      <p class="mb-6 text-gray-500 dark:text-gray-400">
+        We plan and execute engaging technical events, workshops, and projects
+        that inspire and empower our community. Our collaborative spirit and
+        diverse skill sets drive our mission to create a thriving environment
+        for learning, innovation, and growth.
+      </p>
+      <button
+        class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800"
+      >
+        <a
+          href="{% url 'teams' %}"
+          class="inline-flex items-center justify-center rounded-lg bg-primary-700 px-5 py-3 text-center text-base font-medium text-black hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+        >
+          Our Team ↗️
+        </a>
+      </button>
+    </div>
+  </div>
+</section>
 <div class="flex justify-center">
   <h1
-    class="max-w-2xl mt-10 mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
+    class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
   >
     Our Aim 🎯
   </h1>
@@ -92,7 +143,7 @@
         </h3>
 
         <p
-          class="text-base font-semibold text-gray-500 dark:text-gray-400 text-justify"
+          class="text-base font-semibold text-gray-500 dark:text-gray-400 text-left"
         >
           We are dedicated to fostering education and skill development through
           workshops, projects, and networking, empowering members to excel in
@@ -127,7 +178,7 @@
         </h3>
 
         <p
-          class="text-base font-semibold text-gray-500 dark:text-gray-400 text-justify"
+          class="text-base font-semibold text-gray-500 dark:text-gray-400 text-left"
         >
           We encourage collaboration and networking as they foster innovation,
           enhance productivity, and drive professional growth, ultimately
@@ -162,7 +213,7 @@
         </h3>
 
         <p
-          class="text-base font-semibold text-gray-500 dark:text-gray-400 text-justify"
+          class="text-base font-semibold text-gray-500 dark:text-gray-400 text-left"
         >
           We champion innovation and research for their critical role in driving
           progress, advancing knowledge, and achieving excellence, fostering a
