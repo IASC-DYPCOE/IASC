@@ -21,7 +21,7 @@
     <title>{% block title %} Base {% endblock %}</title>
   </head>
 
-  <body class="bg-gray-900">
+  <body class="bg-gray-900 max-w-screen">
     <nav class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
       <div
         class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4"
@@ -114,12 +114,13 @@
             <a href="{% url 'home' %}" class="flex items-center">
               <img
                 src="{% static 'images/iasc_logo.png' %}"
-                class="mr-8 h-48 rounded-lg"
+                class="mr-4 h-48 rounded-lg"
                 alt="iasc logo"
               />
               <span
-                class="self-center font-sans text-2xl font-semibold whitespace-nowrap dark:text-white"
-                >Intel AI Students Club</span
+                class="self-center font-sans text-xl font-semibold whitespace-nowrap dark:text-white"
+                >Intel AI <br />
+                Students Club</span
               >
             </a>
           </div>
