@@ -69,6 +69,10 @@ TEMPLATES = [
     },
 ]
 
+STATICFILES_DIRS = [
+    BASE_DIR / "iascweb" / "static",
+]
+
 
 WSGI_APPLICATION = "iascweb.wsgi.application"
 
