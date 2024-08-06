@@ -69,9 +69,6 @@ TEMPLATES = [
     },
 ]
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "website", "static"),
-]
 
 WSGI_APPLICATION = "iascweb.wsgi.application"
 
