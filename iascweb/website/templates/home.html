@@ -2,33 +2,44 @@
 {% extends "base.html" %} {% block title %} IASC {% endblock %} {% block content %}
 {% load static %}
 <style>
-  .fade-in-bck {
-    -webkit-animation: fade-in-bck 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation: fade-in-bck 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  }
-  @-webkit-keyframes fade-in-bck {
-    0% {
-      -webkit-transform: translateZ(80px);
-      transform: translateZ(80px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateZ(0);
-      transform: translateZ(0);
-      opacity: 1;
-    }
-  }
   @keyframes fade-in-bck {
     0% {
-      -webkit-transform: translateZ(80px);
       transform: translateZ(80px);
       opacity: 0;
     }
     100% {
-      -webkit-transform: translateZ(0);
       transform: translateZ(0);
       opacity: 1;
     }
+  }
+
+  @keyframes pulsate {
+    0% {
+      box-shadow: 0 -10px 20px rgba(58, 150, 255, 0.8); /* Top border */
+    }
+    25% {
+      box-shadow: 10px 0 20px rgba(58, 150, 255, 0.8); /* Right border */
+    }
+    50% {
+      box-shadow: 0 10px 20px rgba(58, 150, 255, 0.8); /* Bottom border */
+    }
+    75% {
+      box-shadow: -10px 0 20px rgba(58, 150, 255, 0.8); /* Left border */
+    }
+    100% {
+      box-shadow: 0 -10px 20px rgba(58, 150, 255, 0.8); /* Back to Top border */
+    }
+  }
+
+  .fade-in-bck {
+    animation: fade-in-bck 1s cubic-bezier(0.39, 0.575, 0.565, 1) both,
+      pulsate 5s infinite;
+  }
+
+  .neon-glow {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    animation: pulsate 5s infinite;
   }
 </style>
 <div class="bg-blue-700">
@@ -138,9 +149,11 @@
         </a>
       </div>
     </div>
-    <div class="lg:order-1 lg:mt-0 lg:col-span-5 lg:flex">
+    <div
+      class="lg:order-1 lg:mt-0 lg:col-span-5 lg:flex fade-in-bck rounded-3xl"
+    >
       <!-- prettier-ignore -->
-      <img src="{% static 'images/iasc_logo_intel.png' %}" class="border-2 fade-in-bck shadow-2xl rounded-3xl" style="pointer-events: none; user-select:none;" />
+      <img src="{% static 'images/iasc_logo_intel.png' %}" class="border-2  shadow-2xl rounded-3xl neon-glow" style="pointer-events: none; user-select:none;" />
     </div>
   </div>
 </div>
