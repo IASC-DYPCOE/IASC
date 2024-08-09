@@ -130,6 +130,7 @@ ENV/
 env.bak/
 venv.bak/
 iascweb/db.sqlite3
+node_modules/
 
 # Spyder project settings
 .spyderproject
