@@ -85,19 +85,19 @@
           </svg></h3
       ></a>
       <p
-        class="max-w-2xl mb-6 font-semibold text-center text-white-900 lg:mb-8 md:text-lg lg:text-2xl text-zinc-400"
+        class="max-w-2xl mb-6 font-semibold text-center text-white lg:mb-8 md:text-lg lg:text-2xl"
       >
         A vibrant community established to foster innovation, collaboration, and
         skill development in technology
       </p>
-      <div class="flex gap-16 bg-gray-900 rounded-xl shadow-2xl p-3">
+      <div class="flex gap-8 lg:gap-16 bg-gray-900 rounded-xl shadow-2xl p-3">
         <a
           target="_blank"
           href="https://www.instagram.com/iasc_dypcoe"
           aria-label="Follow us on Instagram"
         >
           <svg
-            class="w-8 h-8 text-gray-800 text-white"
+            class="w-6 h-6 text-gray-800 text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -119,7 +119,7 @@
           aria-label="Visit our github page"
         >
           <svg
-            class="w-8 h-8 text-gray-800 text-white"
+            class="w-6 h-6 text-gray-800 text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -140,7 +140,7 @@
           aria-label="Connect with us on LinkedIn"
         >
           <svg
-            class="w-8 h-8 text-gray-800 text-white"
+            class="w-6 h-6 text-gray-800 text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -161,19 +161,35 @@
           href="https://medium.com/@intelstudentsclubdypcoe"
           aria-label="Visit our github page"
         >
+          <img
+            src="{% static 'images/medium_logo.svg' %}"
+            alt="medium_logo"
+            class="w-6 h-6 bg-white rounded-lg p-1"
+          />
+        </a>
+        <a
+          target="_blank"
+          href="https://chat.whatsapp.com/JueNGLbz1TE0a3TsQNj84M"
+          aria-label="Visit our github page"
+        >
           <svg
-            class="w-8 h-8 text-gray-800 text-white"
+            class="w-6 h-6 text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
-            fill="currentColor"
+            fill="none"
             viewBox="0 0 24 24"
           >
             <path
+              fill="currentColor"
               fill-rule="evenodd"
-              d="M72.2009141,1.42108547e-14 C112.076502,1.42108547e-14 144.399375,32.5485469 144.399375,72.6964154 C144.399375,112.844284 112.074049,145.390378 72.2009141,145.390378 C32.327779,145.390378 0,112.844284 0,72.6964154 C0,32.5485469 32.325326,1.42108547e-14 72.2009141,1.42108547e-14 Z M187.500628,4.25836743 C207.438422,4.25836743 223.601085,34.8960455 223.601085,72.6964154 L223.603538,72.6964154 C223.603538,110.486973 207.440875,141.134463 187.503081,141.134463 C167.565287,141.134463 151.402624,110.486973 151.402624,72.6964154 C151.402624,34.9058574 167.562834,4.25836743 187.500628,4.25836743 Z M243.303393,11.3867175 C250.314,11.3867175 256,38.835526 256,72.6964154 C256,106.547493 250.316453,134.006113 243.303393,134.006113 C236.290333,134.006113 230.609239,106.554852 230.609239,72.6964154 C230.609239,38.837979 236.292786,11.3867175 243.303393,11.3867175 Z"
+              d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z"
               clip-rule="evenodd"
+            />
+            <path
+              fill="currentColor"
+              d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z"
             />
           </svg>
         </a>
@@ -187,13 +203,13 @@
     </div>
   </div>
 </div>
-<section class="px-4 py-8 antialiased bg-gray-900 md:py-16">
+<section class="px-4 py-8 antialiased bg-gray-900 md:py-4">
   <div
     class="mx-auto grid max-w-screen-2xl rounded-lg bg-gray-50 p-4 bg-gray-800 md:p-8 lg:grid-cols-12 lg:gap-8 lg:p-16 xl:gap-16"
   >
     <div class="me-auto place-self-center lg:col-span-7">
       <h1
-        class="mb-3 text-2xl font-bold leading-tight tracking-tight text-gray-900 text-white md:text-4xl"
+        class="mb-3 text-2xl font-bold leading-tight tracking-tight text-white md:text-4xl"
       >
         Want to see our previous events 🎤?
       </h1>
@@ -216,7 +232,7 @@
     </div>
     <div class="me-auto place-self-center lg:col-span-7">
       <h1
-        class="mb-3 text-2xl font-bold leading-tight tracking-tight text-gray-900 text-white md:text-4xl"
+        class="mb-3 text-2xl font-bold leading-tight tracking-tight text-white md:text-4xl"
       >
         Want to meet the team behind IASC 🚀?
       </h1>
@@ -239,7 +255,44 @@
     </div>
   </div>
 </section>
-<div class="flex justify-center">
+<section class="px-4 py-2 antialiased bg-gray-900 md:py-4">
+  <div
+    class="flex flex-col md:flex-row gap-8 items-center py-8 px-4 mx-auto bg-gray-800 rounded-lg max-w-screen-2xl sm:py-16 lg:px-6"
+  >
+    <div class="flex-shrink-0">
+      <img
+        class="rounded-lg border-2 border-white"
+        src="{% static 'images/intel_logo.png' %}"
+        alt="dashboard image"
+        width="400"
+        height="400"
+      />
+    </div>
+    <div class="mt-4 md:mt-0">
+      <h2 class="mb-4 text-2xl md:text-4xl tracking-tight font-bold text-white">
+        Intel® Student Ambassador Programs
+      </h2>
+      <p class="mb-6 md:text-lg text-gray-300">
+        Undergraduate and graduate students who are passionate about technology
+        and working with developer communities can participate in these programs
+        to promote learning, sharing, and collaboration.
+      </p>
+      <button
+        class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 focus:ring-cyan-800"
+      >
+        <a
+          href="https://www.intel.com/content/www/us/en/developer/community/ambassadors.html"
+          class="inline-flex items-center justify-center rounded-lg bg-primary-700 px-5 py-3 text-center text-base font-medium text-black hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 focus:ring-primary-900"
+          target="_blank"
+        >
+          Learn More ↗️
+        </a>
+      </button>
+    </div>
+  </div>
+</section>
+
+<div class="flex mt-8 justify-center">
   <h1
     class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white"
   >
